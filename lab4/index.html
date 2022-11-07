@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+        }
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        section {
+            background-color: lightgreen;
+            border: 2px solid black;
+            flex: 1;
+            margin: 20px;
+            display: flex;
+            flex-flow: row-reverse wrap;
+        }
+        h3 {
+            color: white;
+            min-width: 30%;
+            text-align: center;
+            align-self: flex-start;
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            margin: 0;
+        }
+        section:nth-of-type(1) h3 {
+            background-color: orange;
+        }
+        section:nth-of-type(2) h3 {
+            background-color: maroon;
+        }
+        section:nth-of-type(3) h3 {
+            background-color: pink;
+        }
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            section:last-child {
+                flex: 2 100%;
+            }
+            h3 {
+                min-width: 15vw;
+            }
+        }
+        @media (max-width: 768px) {
+            section {
+                flex: 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Main caption</h1>
+    <div class="flex-container">
+        <section>
+            <h3>Caption1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vitae laboriosam rerum suscipit voluptatem laborum quia odit ducimus fugit, eum quam obcaecati nobis illo et. Quae odit similique recusandae!</p>
+        </section>
+        <section>
+            <h3>Caption2</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, qui? Exercitationem cupiditate nihil at cumque tempora eum iste perspiciatis laboriosam atque placeat! Mollitia iure velit omnis, dolor sint eligendi libero.</p>
+        </section>
+        <section>
+            <h3>Caption3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias a animi magni ipsa excepturi qui, dicta voluptas repellendus delectus ducimus reiciendis tempora pariatur ut nobis eius vitae perspiciatis quos?</p>
+        </section>
+    </div>
+</body>
+</html>
