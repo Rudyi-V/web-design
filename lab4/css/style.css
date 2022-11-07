@@ -9,6 +9,9 @@
             flex-flow: row wrap;
             justify-content: space-evenly;
         }
+        p {
+            padding: 10px;
+        }
         section {
             background-color: lightgreen;
             border: 2px solid black;
