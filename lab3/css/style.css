@@ -1,4 +1,4 @@
-* {
+    * {
 	box-sizing: border-box;
 }
 
@@ -9,12 +9,14 @@ h1 {
 body > div {
 	padding: 20px;
 }
-
 .box {
 	background-color: lightgreen;
 	border: 2px solid black;
 }
-
+.caption1, .caption2, .caption3 {
+    margin: 0;
+    padding: 3px 10px;
+}
 .caption1{
 	background-color: orange;
 }
